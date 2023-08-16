@@ -1,9 +1,9 @@
 # website DigiTech Camp - Untuk Lomba INVENTION 
 
 Dibuat Oleh Kelas 11
-Rasya Dika Pratama XI PPLG 5
-Alamsyah Adhim Nugraha XI PPLG 2
-Sofwan Nuha Al Faruq XI PPLG 3
+1. Rasya Dika Pratama XI PPLG 5
+2. Alamsyah Adhim Nugraha XI PPLG 2
+3. Sofwan Nuha Al Faruq XI PPLG 3
 
 # LISENSI
 Jangan mengambil code ini tanpa izin, jika ingin memakainya cantumkan link source nya terimakasih..
