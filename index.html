@@ -13,19 +13,28 @@
   <!-- CSS Link -->
   <link rel="stylesheet" href="/asset/css/styles.css">
 
+  <!-- JS Link -->
+  <script src="/asset/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
   <!-- Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Hello, world!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>DigiTech Camp</title>
 </head>
 
 <body>
   <!-- Buat Navigation Bar website DigiTech Camp -->
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">DigiTech Camp</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -63,8 +72,83 @@
       </div>
     </div>
   </nav>
+  
+
+  <!-- Home Page Section -->
+  <section id="home">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-6 home-tagline my-auto">
+          <h1>Belajar Dunia Digital
+            dengan mudah, cepat, simpel dan menyenangkan hanya ada di DigiTech Camp</h1>
+          <p>belajar di <span class="fw-bold">DigiTech Camp</span> sangat mudah di pahami di bandingkan yang lain.
+            selain mudah di sini juga lebih murah dan banyak materi
+            gratis nya. ayo segara join dengan kami di <span class="fw-bold">DigiTech Camp</span>,
+            Daftar sekarang juga sedang ada promo.</p>
+
+          <button type="button" class="btn btn-primary btn-lg">Pilih Course</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Page End Section -->
+
+  <!-- Second Section -->
+  <section id="second" class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="about-judul col-12 text-center">
+          <h1>About DigiTech Camp</h1>
+        </div>
+        <div class="col-md">
+          <div class="about-img">
+            <img src="/asset/img/about-image.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md ">
+          <div class="about-text">
+            <h2>Kenapa Harus Memilih DigiTech Camp</h2>
+            <p><span class="fw-bold">DigiTech Camp</span> Adalah salah satu platfrom untuk belajar dunia digital.
+              contohnya ada web programming, desain grafis, digital marketing dan masih banyak lagi. Kenapa harus
+              memilih <span class="fw-bold">DigiTech Camp</span>, karena disini biayanya lebih terjangkau di bandingkan
+              yang lain. selain itu banyak kursus gratis juga yang dapat di hadiri semua orang tanpa harus bayar.
+              Walaupun murah tapi kualitas <span class="fw-bold">DigiTech Camp</span> kami bisa menjamin, bisa setara
+              dengan yang harganya mahal.</p>
+
+            <div class="verify">
+              <i class='bx bxs-badge-check'>
+                <p class="my-3">Kelas yang dihadirkan secara offline mudah untuk dipahami</p>
+              </i>
+              <i class='bx bxs-badge-check'>
+                <p class="my-3">Waktunya fleksibel jadi tidak menggangu pembelajaran</p>
+              </i>
+              <i class='bx bxs-badge-check'>
+                <p class="my-3">Durasi pembelajaran yang tidak terlalu lama tetapi lengkap materinya</p>
+              </i>
+              <i class='bx bxs-badge-check'>
+                <p class="my-3">Sertifikat yang diterima bisa untuk menambah CV saat mendaftar kerja</p>
+              </i>
+            </div>
+
+
+            <button type="button" class="btn btn-primary btn-lg">Cari Course</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <script>
+    $(document).ready(function() {
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 100) {
+            $('.navbar').css('backdrop-filter', 'blur(10px)');
+        } else {
+            $('.navbar').css('backdrop-filter', 'blur(0)');
+        }
+    });
+});</script>
 </html>
