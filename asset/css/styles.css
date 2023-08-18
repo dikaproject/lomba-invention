@@ -168,3 +168,44 @@ body {
     color: white;
 }
 
+
+/* footer start */
+.link-sosmed, .footer-line {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 6px;
+    transition: margin 0.3s, color 0.3s;
+}
+
+.link-sosmed:hover  {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.footer-text {
+    color: #B1D182;
+}
+
+.footer-line:hover {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.footer-location h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-location p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+}
+
