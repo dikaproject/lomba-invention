@@ -296,3 +296,129 @@ hr .style1{
     font-weight: 400;
     position: relative;
 }
+
+/* halaman course */
+#course-section {
+    background-image: url(/asset/img/course-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#course-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.course-hero .container-course {
+    min-height: calc(100vh - 96px);
+}
+
+.course-hero h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.course-hero p {
+    width: 800px;
+    font-weight: 400;
+}
+
+/* course section */
+
+.card-limit {
+    display: none;
+}
+.card-limit:nth-of-type(-n+4) {
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 150px;
+}
+
+.course-text {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 150px;
+}
+.course-paragraf {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    line-height: normal;
+    width: 70%;
+}
+
+/* sponsor logo */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #23262A;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), );
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), );
+  }
+  
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
