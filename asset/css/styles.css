@@ -298,15 +298,13 @@ hr .style1{
 }
 
 /* halaman course */
-#course-section {
+#hero {
     background-image: url(/asset/img/course-background.jpeg);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background-size: cover;
 }
 
-#course-section::before {
+#hero::before {
     content: "";
     display: block;
     position: absolute;
@@ -317,20 +315,30 @@ hr .style1{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.course-hero .container-course {
-    min-height: calc(100vh - 96px);
-}
-
-.course-hero h1 {
+#hero h1 {
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 32px;
 }
 
-.course-hero p {
-    width: 800px;
+#hero h5 {
+    font-size: 24px;
+    letter-spacing: 2px;
     font-weight: 400;
 }
+
+@media (max-width: 600px) {
+    #hero h1 {
+      font-size: 24px;
+    }
+  
+    #hero h5 {
+      font-size: 16px;
+    }
+  }
+
 
 /* course section */
 
