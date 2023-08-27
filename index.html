@@ -13,6 +13,10 @@
   <!-- CSS Link -->
   <link rel="stylesheet" href="/asset/css/styles.css">
 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   <!-- JS Link -->
   <script src="/asset/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -74,16 +78,22 @@
   <!-- Home Page Section -->
   <section id="home">
     <div class="container h-100">
-      <div class="row h-100 ">
-        <div class="col-md-6 home-tagline my-auto">
-          <h1>Belajar Dunia Digital
-            dengan mudah, cepat, simpel dan menyenangkan hanya ada di DigiTech Camp</h1>
-          <p>belajar di <span class="fw-bold">DigiTech Camp</span> sangat mudah di pahami di bandingkan yang lain.
-            selain mudah di sini juga lebih murah dan banyak materi
-            gratis nya. ayo segara join dengan kami di <span class="fw-bold">DigiTech Camp</span>,
-            Daftar sekarang juga sedang ada promo.</p>
+      <div class="row h-100 align-items-center">
+        <div class="col-md-6 home-tagline">
+          <div class="copy" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
+            <h1>Belajar Dunia Koding
+              dengan tutorial yang mudah dipahami di DigiTech Camp</h1>
+            <p>Temukan materi belajarmu di DigiTech Camp dengan tutorial yang mudah di pahami, belajar di mana saja dan
+              kapan saja dengan DigiTech
+              Tunggu apa lagi ? Ayo Bergabung Sekarang Juga ! </p>
 
-          <button type="button" class="btn btn-primary btn-lg">Pilih Course</button>
+            <button type="button" class="btn btn-primary btn-lg">Pilih Course</button>
+          </div>
+
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="3000"
+          data-aos-delay="50">
+          <img src="/asset/img/hero-section.png" alt="Image" class="img-fluid custom-image">
         </div>
       </div>
     </div>
@@ -95,46 +105,40 @@
   <section id="second" class="about section-padding">
     <div class="container">
       <div class="row">
-        <div class="about-judul col-12 text-center">
-          <h1>About DigiTech Camp</h1>
-          <p class="text-white">DigiTech Camp adalah website yang menyediakan informasi, pelatihan, dan komunitas untuk
-            belajar dunia digital, seperti web programming, desain grafis, digital marketing, dan lainnya. Kami
-            mendorong orang-orang untuk menjelajahi, menguasai, dan menciptakan teknologi digital yang bermanfaat bagi
-            diri sendiri dan masyarakat. Kami percaya bahwa teknologi digital adalah alat yang dapat membahagiakan
-            manusia, baik secara pribadi maupun sosial. Kami juga menciptakan sebuah komunitas yang saling berbagi,
-            berdiskusi, berkolaborasi, dan bersahabat dalam proses belajar. Dengan memilih DigiTech Camp, Anda akan
-            mendapatkan berbagai keuntungan, seperti biaya terjangkau, kursus gratis, kualitas terjamin, dan sertifikat
-            resmi. Dengan demikian, DigiTech Camp adalah website yang ingin membuat orang-orang menjadi lebih cinta,
-            pintar, dan kreatif dalam teknologi digital.</p>
-        </div>
         <div class="col-md">
-          <div class="about-img">
-            <img src="/asset/img/about-image.png" alt="" class="img-fluid">
+          <div class="about-img" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="50">
+            <img src="/asset/img/image 3.png" alt="" class="img-fluid">
           </div>
         </div>
         <div class="col-md ">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="50">
             <h2>Kenapa Harus Memilih DigiTech Camp</h2>
-            <p><span class="fw-bold">DigiTech Camp</span> Adalah salah satu platfrom untuk belajar dunia digital.
-              contohnya ada web programming, desain grafis, digital marketing dan masih banyak lagi. Kenapa harus
-              memilih <span class="fw-bold">DigiTech Camp</span>, karena disini biayanya lebih terjangkau di bandingkan
-              yang lain. selain itu banyak kursus gratis juga yang dapat di hadiri semua orang tanpa harus bayar.
-              Walaupun murah tapi kualitas <span class="fw-bold">DigiTech Camp</span>, kami menjamin bisa setara
-              dengan yang harganya mahal.</p>
-
-            <div class="verify">
-              <i class='bx bxs-badge-check'>
-                <p class="my-3">Kelas yang dihadirkan secara offline mudah untuk dipahami</p>
-              </i>
-              <i class='bx bxs-badge-check'>
-                <p class="my-3">Waktunya fleksibel jadi tidak menggangu pembelajaran</p>
-              </i>
-              <i class='bx bxs-badge-check'>
-                <p class="my-3">Durasi pembelajaran yang tidak terlalu lama tetapi lengkap materinya</p>
-              </i>
-              <i class='bx bxs-badge-check'>
-                <p class="my-3">Sertifikat yang diterima bisa untuk menambah CV saat mendaftar kerja</p>
-              </i>
+            <div class="card card-about" style="background-color: #2C74B3;">
+              <div class="card-about-body">
+                <div class="text-section">
+                  <i class='bx bxs-badge-check card-text'>
+                    <p class="card-text">Kelas yang di hadirkan secara offline mudah untuk dipahami.</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="card card-about" style="background-color: #2C74B3;">
+              <div class="card-about-body">
+                <div class="text-section">
+                  <i class='bx bxs-badge-check card-text'>
+                    <p class="card-text">Mentor yang kompeten dan terpercaya.</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="card card-about" style="background-color: #2C74B3;">
+              <div class="card-about-body">
+                <div class="text-section">
+                  <i class='bx bxs-badge-check card-text'>
+                    <p class="card-text">Kelas yang di hadirkan secara offline mudah untuk dipahami.</p>
+                  </i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,54 +150,58 @@
   <!-- course-service Section -->
   <section id="course-service" class="service section-padding">
     <div class="container-fluid">
-      <h1 class="services-text text-center text-white">Populer Course Services</h1>
-      <p class="paragraf-services text-center text-white mx-auto">DigiTech Camp memiliki kursus-kursus online populer
-        yang membahas berbagai topik teknologi digital, mulai dari digital marketing, graphic design, coding, hingga
-        personal development. Anda akan belajar dari para ahli di bidangnya, mendapatkan sertifikat yang diakui, dan
-        bergabung dengan komunitas yang aktif dan ramah. DigiTech Camp siap membantu Anda menjelajahi, menguasai, dan
-        menciptakan teknologi digital yang bermanfaat bagi diri sendiri dan masyarakat.</p>
-      <hr class="mx-auto mb-5 w-25">
+      <div class="animate" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="50">
+        <h1 class="services-text text-center text-white">Populer Course Services</h1>
+        <p class="paragraf-services text-center text-white mx-auto">Tentukan pembelajaran yang kamu inginkan di popular
+          course kami.</p>
+        <hr class="mx-auto mb-5 w-25">
+      </div>
       <div class="row mb-5">
         <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <div class="card shadow">
-            <img src="/asset/img/html.png" alt="" class="card-img-top mx-auto">
-            <div class="card-body">
-              <h3 class="text-center">Web Programming</h3>
-              <hr class="mx-auto w-75">
-              <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Rasya Dika Pratama</h4>
-              <p>
-                Web Programming akan mempelajari HTML , CSS , JS. dan akan mempelajari Framework Bootstrap dan Tailwind,
-                tugas akhir membuat portofolio website
-              </p>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
+          <a class="card-link" href="/course.html">
+            <div class="card shadow">
+              <img src="/asset/img/html.png" alt="" class="card-img-top mx-auto">
+              <div class="card-body">
+                <h3 class="text-center">Web Programming</h3>
+                <hr class="mx-auto w-75">
+                <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Rasya Dika Pratama</h4>
+                <p>
+                  Web Programming akan mempelajari HTML , CSS , JS. dan akan mempelajari Framework Bootstrap dan
+                  Tailwind,
+                  tugas akhir membuat portofolio website
+                </p>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <div class="card shadow">
-            <img src="/asset/img/laravel.png" alt="" class="card-img-top mx-auto">
-            <div class="card-body">
-              <h3 class="text-center">Laravel Framework</h3>
-              <hr class="mx-auto w-75">
-              <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Alamsyah Adhim Nugraha</h4>
-              <p>
-                Larave Framework akan mempelajari dasar - dasar dari laravel hingga struktur kompleks laravel, tugas
-                akhir membuat portofolio website
-              </p>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
+          <a class="card-link" href="/course.html">
+            <div class="card shadow">
+              <img src="/asset/img/laravel.png" alt="" class="card-img-top mx-auto">
+              <div class="card-body">
+                <h3 class="text-center">Laravel Framework</h3>
+                <hr class="mx-auto w-75">
+                <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Alamsyah Adhim Nugraha</h4>
+                <p>
+                  Larave Framework akan mempelajari dasar - dasar dari laravel hingga struktur kompleks laravel, tugas
+                  akhir membuat portofolio website
+                </p>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <a class="card-link" href="/index.html">
+          <a class="card-link" href="/course.html">
             <div class="card shadow">
               <img src="/asset/img/digital-marketing.png" alt="" class="card-img-top mx-auto">
               <div class="card-body">
@@ -214,33 +222,55 @@
           </a>
         </div>
         <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <div class="card shadow">
-            <img src="/asset/img/data-analis.png" alt="" class="card-img-top mx-auto">
-            <div class="card-body">
-              <h3 class="text-center">Data Analysis</h3>
-              <hr class="mx-auto w-75">
-              <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Sofwan Nuha Al Faruq</h4>
-              <p>
-                Data Analysis akan mengajarkan kamu dengan keterampilan, alat, dan metode analisis data, tugas akhir
-                membuat dashboard.
-              </p>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
+          <a class="card-link" href="/course.html">
+            <div class="card shadow">
+              <img src="/asset/img/data-analis.png" alt="" class="card-img-top mx-auto">
+              <div class="card-body">
+                <h3 class="text-center">Data Analysis</h3>
+                <hr class="mx-auto w-75">
+                <h4><i class='bx bxs-user-circle' style="margin-right:8px"></i> Sofwan Nuha Al Faruq</h4>
+                <p>
+                  Data Analysis akan mengajarkan kamu dengan keterampilan, alat, dan metode analisis data, tugas akhir
+                  membuat dashboard.
+                </p>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
   <!-- Course Service End -->
 
+  <section id="media-partner" class="media-partner section-padding">
+    <div class="container-fluid">
+      <div class="animate" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="50">
+        <h1 class="media-partner-text text-center text-white">Media Partner Kami</h1>
+      </div>
+    </div>
+    <div class="logos-media-partner">
+      <div class="logos-slide-mdprt">
+        <img src="/asset/img/aws.png" />
+        <img src="/asset/img/azure.png" />
+        <img src="/asset/img/dicoding.png" />
+        <img src="/asset/img/digital-ocean.png" />
+        <img src="/asset/img/feastables.png" />
+        <img src="/asset/img/gojek.png" />
+        <img src="/asset/img/idcloud-host.png" />
+        <img src="/asset/img/niagahoster.png" />
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Us Section -->
   <section id="contact-us">
     <div class="container-fluid">
-      <div class="container">
+      <div class="container" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="50">
         <div class="title-contact">
           <h1 class="text-center mb-5 p-3 fw-bold">Contact Us</h1>
         </div>
@@ -356,6 +386,12 @@
     </div>
   </footer>
 </body>
+
+<script>
+  var copy = document.querySelector(".logos-slide-mdprt").cloneNode(true);
+  document.querySelector(".logos-media-partner").appendChild(copy);
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script>
@@ -368,5 +404,10 @@
       }
     });
   });</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
