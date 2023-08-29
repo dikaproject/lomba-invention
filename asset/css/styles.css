@@ -89,9 +89,17 @@ body {
 }
 
 .custom-image {
-    max-width: 100%; /* Gambar tidak akan melebihi lebar kolom */
+    max-width: 100%;
     height: auto;
-    margin-top: 20px; /* Atur margin di atas gambar sesuai keinginan */
+    margin-top: 20px;
+  }
+
+@media (max-width: 768px) {
+    .custom-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 0;
+    }
   }
 
 .home-tagline h1 {
@@ -104,10 +112,10 @@ body {
 
 @media (max-width: 768px) {
     .home-tagline h1 {
-      margin-top: 100px; /* Di perangkat mobile, kartu akan mengisi lebar container */
+        margin-top: 45px;
+      font-size: 24px;
     }
   }
-
 
 .home-tagline p {
     color: var(--text-color);
@@ -120,10 +128,17 @@ body {
     width: 65%;
 }
 
+@media (max-width: 768px) {
+    .home-tagline p {
+      font-size: 14px;
+    }
+  }
+
 .btn {
     border-radius: 12px;
     transition-duration: 0.4s;
     size: 20px;
+    margin-top: 35px;
 }
 
 .btn:hover {
@@ -131,6 +146,50 @@ body {
     /* Green */
     color: white;
 }
+
+#home .home-text p{
+	margin:0;
+	overflow: hidden;
+}
+
+#home .home-text p span {
+    font-size: 32px;
+    color: rgb(218, 218, 38);
+    font-weight: 700;
+    display: inline-block;
+    line-height: 46px;
+    display: none;
+    text-shadow: inset 0 0 10px #FF5F1F;
+    margin-bottom: 20px;
+  }
+  
+
+#home .home-text p span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+#home .home-text p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
 
 /* Second Section */
 #second {

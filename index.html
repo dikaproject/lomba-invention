@@ -76,13 +76,19 @@
 
 
   <!-- Home Page Section -->
-  <section id="home">
+  <section id="home" class="home">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-md-6 home-tagline">
-          <div class="copy" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
+          <div class="home-text" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
             <h1>Belajar Dunia Koding
               dengan tutorial yang mudah dipahami di DigiTech Camp</h1>
+              <p class="animate-text">
+                <span>Mudah</span>
+                <span>Terjangkau</span>
+                <span>Bersertifikat</span>
+                <span>Standar Nasional</span>
+             </p>
             <p>Temukan materi belajarmu di DigiTech Camp dengan tutorial yang mudah di pahami, belajar di mana saja dan
               kapan saja dengan DigiTech
               Tunggu apa lagi ? Ayo Bergabung Sekarang Juga ! </p>
@@ -135,7 +141,16 @@
               <div class="card-about-body">
                 <div class="text-section">
                   <i class='bx bxs-badge-check card-text'>
-                    <p class="card-text">Kelas yang di hadirkan secara offline mudah untuk dipahami.</p>
+                    <p class="card-text">Waktu pembelajaran yang flexible.</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="card card-about" style="background-color: #2C74B3;">
+              <div class="card-about-body">
+                <div class="text-section">
+                  <i class='bx bxs-badge-check card-text'>
+                    <p class="card-text">Berstandar Nasional dan mendapatkan sertifikat.</p>
                   </i>
                 </div>
               </div>
@@ -408,6 +423,39 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+
+<script>
+  const txts=document.querySelector(".animate-text").children,
+        txtsLen=txts.length;
+    let index=0;
+   const textInTimer=3000,
+         textOutTimer=2800;
+
+  function animateText() {
+     for(let i=0; i<txtsLen; i++){
+       txts[i].classList.remove("text-in","text-out");  
+     }
+     txts[index].classList.add("text-in");
+
+     setTimeout(function(){
+         txts[index].classList.add("text-out");              
+     },textOutTimer)
+
+     setTimeout(function(){
+
+       if(index == txtsLen-1){
+           index=0;
+         }
+        else{
+            index++;
+          }
+         animateText();
+     },textInTimer); 
+  }
+  
+  window.onload=animateText;
+
 </script>
 
 </html>
