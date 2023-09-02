@@ -25,7 +25,7 @@
 
 
     <!-- JS Link -->
-    <script src="/asset/js/main.js"></script>
+    <script src="/asset/js/main.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,14 +88,37 @@
         </div>
     </nav>
 
+    <!-- Chat bot page -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Halo Zephyr Chatbot disini 👋<br>Ada yang bisa saya bantu hari ini?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+    <!-- End chat bot page -->
+
     <!-- HERO -->
     <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Kursus IT
+                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
+                    <h1 class="text-uppercase text-white fw-semibold display-1">Kursus IT
                         Terlengkap dan mudah dipahami</h1>
-                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">Tingkatkan Skill Anda dengan Mudah Pilih
+                    <h5 class="text-white mt-3 mb-4">Tingkatkan Skill Anda dengan Mudah Pilih
                         Materi Belajar Sesuai Minat Anda Daftar Sekarang dan Dapatkan Promo Menarik setiap minggunya.
                     </h5>
 
@@ -140,12 +167,13 @@
             </div>
         </div>
     </div>
+
     
     <!-- Sponsor Logo -->
     <section id="sponsor" class="sponsor section-padding">
         <div class="container-fluid">
           <div class="animate">
-            <h1 class="sponsor-text text-center text-white">Kami Di Sponsori</h1>
+            <h1 class="sponsor-text text-center text-white">KAMI DI SPONSORI OLEH</h1>
           </div>
         </div>
         <div class="logos">
@@ -161,6 +189,113 @@
           </div>
         </div>
       </section>
+
+      <!-- Tentang DigiTech Camp -->
+    <section class="tentang-digi">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3>Apa itu <span>DigiTech Camp Course?</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, amet inventore id voluptas ut eius earum nihil debitis doloribus eveniet accusamus facilis officiis architecto nisi ea nostrum facere sed provident culpa quibusdam veritatis sapiente reiciendis. Corrupti, sed similique quibusdam laborum nam molestias dolores quos natus.</p>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                    <img src="/asset/img/tentang.jpg" alt="tentang digitech camp" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+    <!-- Beasiswa page -->
+    <section id="beasiswa-digi" class="beasiswa-digi">
+        <div class="beasiswa wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-content text-center">
+                            <h2>Beasiswa DigiTech Camp</h2>
+                            <p class="mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum facere dolore ipsam excepturi quidem ut veritatis voluptatem, et minus reprehenderit ex repudiandae cumque cupiditate amet ullam corporis molestiae. Quia, quisquam!</p>
+
+                            <button type="button" class="btn btn-primary btn-lg">Pilih Course</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-md-5">
+        <h2 class="my-5 text-center text-white">FAQ DigiTech Camp</h2>
+        <div class="container">
+            <div class="accordion w-75 mx-auto" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      DigiTech Camp Course itu apa sih ?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Dalam 1 Minggu berapa kali pertemuan ?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Berapa lama mengikuti program course disini ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Anak SMK apakah boleh mengikuti program ini ?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Hubungi kami jika ingin pertanyaan lebih lanjut
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
 
     <!-- Footer Start -->
     <footer class="bg-dark text-white pt-5 pb-4">
